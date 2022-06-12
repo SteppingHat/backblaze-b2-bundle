@@ -1,0 +1,28 @@
+{
+  "accountId": "010203040506",
+  "bucketId": "4a48fe8875c6214145260818",
+  "bucketInfo" : {},
+  "bucketName": "any-name-you-pick",
+  "bucketType": "allPrivate",
+  "corsRules": [],
+  "defaultServerSideEncryption": {
+    "isClientAuthorizedToRead" : true,
+    "value": {
+      "algorithm" : null,
+      "mode" : null
+    }
+  },
+  "fileLockConfiguration": {
+    "isClientAuthorizedToRead": true,
+    "value": {
+      "defaultRetention": {
+        "mode": null,
+        "period": null
+      },
+      "isFileLockEnabled": false
+    }
+  },
+  "lifecycleRules": [],
+  "options": [],
+  "revision": 2
+}

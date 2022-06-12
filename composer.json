@@ -1,0 +1,37 @@
+{
+    "name": "steppinghat/backblaze-b2-bundle",
+    "description": "A Symfony compatible bundle for interfacing with the Backblaze B2 API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SteppingHat\\BackblazeB2\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SteppingHat\\BackblazeB2\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Javan Eskander",
+            "homepage": "https://javaneskander.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "symfony/http-client": "^5.4",
+        "symfony/config": "^5.4",
+        "symfony/dependency-injection": "^5.4",
+        "symfony/framework-bundle": "^5.4",
+        "symfony/cache": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.4"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

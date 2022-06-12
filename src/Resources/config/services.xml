@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="backblazeb2.account_id" />
+        <parameter key="backblazeb2.application_id"/>
+        <parameter key="backblazeb2.application_secret"/>
+        <parameter key="backblazeb2.token_cache_directory"/>
+    </parameters>
+
+    <services>
+        <defaults public="true"/>
+
+        <service id="SteppingHat\BackblazeB2\Client\BackblazeClient" alias="backblazeb2.client"/>
+
+        <service id="backblazeb2.client" class="SteppingHat\BackblazeB2\Client\BackblazeClient">
+            <argument type="service" id="Symfony\Contracts\HttpClient\HttpClientInterface"/>
+            <argument>%backblazeb2.account_id%</argument>
+            <argument>%backblazeb2.application_id%</argument>
+            <argument>%backblazeb2.application_secret%</argument>
+            <argument>%backblazeb2.token_cache_directory%</argument>
+        </service>
+    </services>
+</container>
