@@ -1,6 +1,11 @@
 Backblaze B2 API for Symfony
 ============================
 
+[![Latest Stable Version](http://poser.pugx.org/steppinghat/backblaze-b2-bundle/v)](https://packagist.org/packages/steppinghat/backblaze-b2-bundle)
+[![Total Downloads](http://poser.pugx.org/steppinghat/backblaze-b2-bundle/downloads)](https://packagist.org/packages/steppinghat/backblaze-b2-bundle)
+[![License](http://poser.pugx.org/steppinghat/backblaze-b2-bundle/license)](https://packagist.org/packages/steppinghat/backblaze-b2-bundle)
+[![PHP Version Require](http://poser.pugx.org/steppinghat/backblaze-b2-bundle/require/php)](https://packagist.org/packages/steppinghat/backblaze-b2-bundle)
+
 📼 Backblaze B2 API client services for Symfony projects
 
 ## Installation
