@@ -119,7 +119,6 @@ abstract class AbstractClient {
      * @throws TransportExceptionInterface
      */
     private function fetchAuthenticationToken(): AuthenticationToken {
-        dump("FETCHING TOKEN");
         $response = $this->sendRequest(self::B2_API_BASE_URL, 'GET', 'b2_authorize_account', [
             'auth_basic' => implode(':', [$this->applicationId, $this->applicationKey]),
         ]);
